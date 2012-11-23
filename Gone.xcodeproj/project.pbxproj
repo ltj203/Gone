@@ -16,6 +16,9 @@
 		CE11B557165FE9A70075A6A6 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CE11B556165FE9A70075A6A6 /* Default.png */; };
 		CE11B559165FE9A70075A6A6 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE11B558165FE9A70075A6A6 /* Default@2x.png */; };
 		CE11B55B165FE9A70075A6A6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE11B55A165FE9A70075A6A6 /* Default-568h@2x.png */; };
+		CE11B563165FE9B90075A6A6 /* View.m in Sources */ = {isa = PBXBuildFile; fileRef = CE11B562165FE9B90075A6A6 /* View.m */; };
+		CE11B565165FE9CB0075A6A6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE11B564165FE9CB0075A6A6 /* AVFoundation.framework */; };
+		CE11B569165FEB5E0075A6A6 /* gone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE11B568165FEB5E0075A6A6 /* gone.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,10 @@
 		CE11B556165FE9A70075A6A6 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		CE11B558165FE9A70075A6A6 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		CE11B55A165FE9A70075A6A6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		CE11B561165FE9B90075A6A6 /* View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = View.h; sourceTree = "<group>"; };
+		CE11B562165FE9B90075A6A6 /* View.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = View.m; sourceTree = "<group>"; };
+		CE11B564165FE9CB0075A6A6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		CE11B568165FEB5E0075A6A6 /* gone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gone.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE11B565165FE9CB0075A6A6 /* AVFoundation.framework in Frameworks */,
 				CE11B545165FE9A70075A6A6 /* UIKit.framework in Frameworks */,
 				CE11B547165FE9A70075A6A6 /* Foundation.framework in Frameworks */,
 				CE11B549165FE9A70075A6A6 /* CoreGraphics.framework in Frameworks */,
@@ -68,6 +76,7 @@
 		CE11B543165FE9A70075A6A6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CE11B564165FE9CB0075A6A6 /* AVFoundation.framework */,
 				CE11B544165FE9A70075A6A6 /* UIKit.framework */,
 				CE11B546165FE9A70075A6A6 /* Foundation.framework */,
 				CE11B548165FE9A70075A6A6 /* CoreGraphics.framework */,
@@ -80,6 +89,8 @@
 			children = (
 				CE11B553165FE9A70075A6A6 /* GoneAppDelegate.h */,
 				CE11B554165FE9A70075A6A6 /* GoneAppDelegate.m */,
+				CE11B561165FE9B90075A6A6 /* View.h */,
+				CE11B562165FE9B90075A6A6 /* View.m */,
 				CE11B54B165FE9A70075A6A6 /* Supporting Files */,
 			);
 			path = Gone;
@@ -88,6 +99,7 @@
 		CE11B54B165FE9A70075A6A6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CE11B568165FEB5E0075A6A6 /* gone.mp3 */,
 				CE11B54C165FE9A70075A6A6 /* Gone-Info.plist */,
 				CE11B54D165FE9A70075A6A6 /* InfoPlist.strings */,
 				CE11B550165FE9A70075A6A6 /* main.m */,
@@ -155,6 +167,7 @@
 				CE11B557165FE9A70075A6A6 /* Default.png in Resources */,
 				CE11B559165FE9A70075A6A6 /* Default@2x.png in Resources */,
 				CE11B55B165FE9A70075A6A6 /* Default-568h@2x.png in Resources */,
+				CE11B569165FEB5E0075A6A6 /* gone.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +180,7 @@
 			files = (
 				CE11B551165FE9A70075A6A6 /* main.m in Sources */,
 				CE11B555165FE9A70075A6A6 /* GoneAppDelegate.m in Sources */,
+				CE11B563165FE9B90075A6A6 /* View.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
