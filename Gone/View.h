@@ -10,6 +10,7 @@
 
 @interface View : UIView {
     UILabel *label;
+    UITextView *textView;
 }
 
 @end

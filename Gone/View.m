@@ -29,6 +29,18 @@
         label.textColor = [UIColor whiteColor];
         label.text = text;
         [self addSubview:label];
+        
+        NSString *intro = @"David O. Selznick\nPresents";
+        UIFont *font2 = [UIFont systemFontOfSize:32];
+        CGSize size2 = [intro sizeWithFont:font2];
+        textView = [[UITextView alloc] initWithFrame:CGRectMake(b.origin.x, (b.size.height - size2.height)/2, b.size.width, size2.height*2)];
+        textView.text = intro;
+        textView.font = font2;
+        textView.textAlignment = NSTextAlignmentCenter;
+        textView.backgroundColor = [UIColor clearColor];
+        textView.textColor = [UIColor whiteColor];
+        textView.alpha = 0;
+        [self addSubview:textView];
     }
     return self;
 }
@@ -39,15 +51,28 @@
 - (void)drawRect:(CGRect)rect
 {
     // Drawing code
-    [UIView animateWithDuration:25
-                          delay: 23.75
-                        options: UIViewAnimationOptionCurveLinear
+    [UIView animateWithDuration:7.5
+                          delay: 0
+     options:UIViewAnimationOptionCurveLinear
                      animations:^{
-                         label.center = CGPointMake(-label.bounds.size.width/2, self.bounds.size.height/2);
-                     } completion:NULL
+                         textView.alpha = 1;
+                     }completion: ^(BOOL b) {
+                         [UIView animateWithDuration:7.5
+                                               delay: 0
+                                             options:UIViewAnimationOptionCurveLinear
+                                          animations:^{
+                                              textView.alpha = 0;
+                                          }completion:^(BOOL b){
+                                              [UIView animateWithDuration:25
+                                            delay: 10.75
+                                            options: UIViewAnimationOptionCurveLinear
+                                            animations:^{
+                                              label.center = CGPointMake(-label.bounds.size.width/2, self.bounds.size.height/2);
+                                                               } completion:NULL
+                                               ];
+                                          }
+                          ];
+                     }
      ];
-    
 }
-
-
 @end
